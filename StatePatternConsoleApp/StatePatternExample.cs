@@ -6,7 +6,17 @@ namespace StatePatternConsoleApp
 {
 	public class ExitState {
 		public ExitState() {
+    class TheApplication
+    {
+        public TheApplication()
+        {
 
-		}
-	}
+        }
+
+        public void Run()
+        {
+
+        }
+    }
 }
+
