@@ -4,6 +4,8 @@ using System.Text;
 
 namespace StatePatternConsoleApp
 {
+	public class ExitState {
+		public ExitState() {
     class TheApplication
     {
         public TheApplication()
