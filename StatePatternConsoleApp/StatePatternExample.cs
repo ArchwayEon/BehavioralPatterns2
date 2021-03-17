@@ -4,5 +4,17 @@ using System.Text;
 
 namespace StatePatternConsoleApp
 {
-   // Add your code here
+    class TheApplication
+    {
+        public TheApplication()
+        {
+
+        }
+
+        public void Run()
+        {
+
+        }
+    }
 }
+
