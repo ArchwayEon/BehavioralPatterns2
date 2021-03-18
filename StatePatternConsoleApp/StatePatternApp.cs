@@ -6,7 +6,8 @@ namespace StatePatternConsoleApp
    {
       static void Main(string[] args)
       {
-         Console.WriteLine("Hello World!");
+         TheApplication app = new TheApplication();
+         app.Run();
       }
    }
 }
