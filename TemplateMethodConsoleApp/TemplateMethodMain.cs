@@ -1,12 +1,14 @@
 ﻿using System;
 
-namespace TemplateMethodConsoleApp
+namespace TemplateMethodConsoleApp;
+
+class TemplateMethodMain
 {
-   class TemplateMethodMain
-   {
-      static void Main(string[] args)
-      {
-         Console.WriteLine("Hello World!");
-      }
-   }
+    static void Main(string[] args)
+    {
+        MyApplication app = new();
+        app.OpenDocument("document1");
+        app.OpenDocument("document2longname");
+    }
+
 }

@@ -1,13 +1,12 @@
 ﻿using System;
 
-namespace StatePatternConsoleApp
+namespace StatePatternConsoleApp;
+
+class StatePatternApp
 {
-   class StatePatternApp
-   {
-      static void Main(string[] args)
-      {
-         TheApplication app = new TheApplication();
-         app.Run();
-      }
-   }
+  static void Main(string[] args)
+  {
+     TheApplication app = new TheApplication();
+     app.Run();
+  }
 }

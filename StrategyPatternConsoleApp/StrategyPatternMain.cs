@@ -1,12 +1,27 @@
 ﻿using System;
 
-namespace StrategyPatternConsoleApp
+namespace StrategyPatternConsoleApp;
+
+class StrategyPatternMain
 {
-   class StrategyPatternMain
-   {
-      static void Main(string[] args)
-      {
-         Console.WriteLine("Hello World!");
-      }
-   }
+    static void Main(string[] args)
+    {
+        Car car = new();
+
+        IMoveStrategy[] strategies =
+        {
+            new MoveSlowStrategy(), 
+            new MoveMediumStrategy(), 
+            new MoveFastStrategy()
+        };
+
+        car.Drive();
+        foreach (var strategy in strategies)
+        {
+            car.SetMoveStrategy(strategy);
+            car.Drive();
+        }
+
+
+    }
 }
